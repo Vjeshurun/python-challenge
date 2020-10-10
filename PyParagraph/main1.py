@@ -1,6 +1,6 @@
 from pathlib import Path
 word_count=[]
-input_file = Path('Resources','paragraph_1.txt')
+input_file = Path('Resources','paragraph_2.txt')
 with open(input_file,'r') as txt_file:
    txt_reader = txt_file.read()
    words = len([word for word in txt_reader.split(" ")])
@@ -14,7 +14,7 @@ with open(input_file,'r') as txt_file:
    
 
    
-output_file = Path('Analysis','Paragraph Analysis_1.txt')
+output_file = Path('Analysis','Paragraph Analysis_2.txt')
 with open(output_file,'w') as out_file:
     out_file.write('Paragraph Analysis')
     out_file.write('\n')
